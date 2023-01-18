@@ -120,10 +120,6 @@ export default {
       let result = await axios.get("https://chat-api.up.railway.app/message");
       this.message = result.data;
 
-      
-      let container = document.querySelector(".chat-window");
-        let scrollHeight = container.scrollHeight;
-        container.scrollTop = scrollHeight;
     },
   },
   async mounted() {
